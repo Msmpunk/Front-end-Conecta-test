@@ -2,502 +2,285 @@
 *{
 	margin: 0;
 }
-body{
-	min-height: 100vh;
-	flex-wrap: wrap;
-	background: white;
-}
 a {
 	text-decoration:none;
 }
-header{
-	background: white;
+ul {
+	list-style-type: none;
 }
-#dudas {
+body{
+	padding-bottom: 5.7em;
+	background: #e6e6e6;
+}
+
+.header-container {
 	font-family: 'Poppins', sans-serif;
-	display: inline-block;
-  background: white;
-	position: relative;
-	left: 800px;
-	padding: 2px 5px 5px 5px;
-	margin: 1px 1px 1px 1px;
-	bottom: 5px;
-	height: 30px;
+
 }
-#header .logotipo {
+.top-header{
+	background: white;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	padding: 3px
+}
+.information{
+	grid-area: right;
+	font-size: 13px;
+}
+.information li {
+	display: inline;
+
+}
+.facebook-logo{
+	width: 20px
+}
+.bottom-header {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	text-align: center;
+	padding: 5px 15em;
 	font-family: 'Oswald', sans-serif;
-	display: inline-block;
-	margin:1px;
+	background: #f2f2f2;
+}
+ #header .logotipo {
 	font-size: 30px;
 	color: gray;
 }
-#header .lc{
-	color: #000000;
-	width: 100px
-}
-#titulo{
-	background: #f2f2f2;
-	padding: 2px 2px 2px 2px;
-	width: 1265px;
-	flex-wrap: wrap;
-	position: relative;
-	bottom: 5px;
-}
-#titulo1{
-	background: #f2f2f2;
-	padding: 2px 2px 2px 2px;
-	width: 1260px;
-	flex-wrap: wrap;
-	position: relative;
-	bottom: 5px;
-}
-#titulo .letra-color{
+
+#logotipo .letra-color{
 	color: purple;
+	font-size: 30px
 }
-#titulo .letra{
-		font-family: 'Oswald', sans-serif;
-		font-size: 10px;
-	float: right;
-}
-#titulo1 .letra-color{
-	color: purple;
-}
-#titulo1 .letra{
-		font-family: 'Oswald', sans-serif;
-		font-size: 10px;
-	float: right;
-}
-
-
-#dudas .dudas1 {
-	margin: 1px;
-	padding: 10px 0px 0px 0px;
-	width: 200px;
-	height: 30px;
-	float: left;
-	font-size: 12px;
-}
-#dudas .dudas2{
-	margin: 1px;
-	padding: 2px;
-	max-width: 40px;
-	height: 30px;
-	float: left;
-}
-#titulo .logotipo{
-	position: relative;
-	top: 0px;
-	bottom: 0px;
-	right:0px;
-	left: 100px;
-}
-#titulo .colorlogo{
-	color: #636363;
-}
-#titulo1 .logotipo{
-	position: relative;
-	top: 0px;
-	bottom: 0px;
-	right:0px;
-	left: 100px;
-}
-#titulo1 .colorlogo{
-	color: #636363;
-}
-#dudas .dudas3 {
-	margin: 1px;
-	padding: 6px;
-	max-width: 200px;
-	height: 30px;
-	float: left;
-	font-size: 15px;
-}
-#menu {
-	font-family: 'Teko', sans-serif;
-	color: #000000;
-	display: inline-block;
-	width: auto;
-	position: relative;
-	top: 0px;
-	bottom: 0px;
-	right:0px;
-	left: 125px;
-
-}
-#menu .menu-1 li{
-	display: inline-block;
-	margin:
-	padding: 1px;
-}
-#menu-2{
+#logotipo .letra{
 	font-family: 'Poppins', sans-serif;
-	display: inline-block;
-	color: #ffffff;
-	position: relative;
-	top: 0px;
-	bottom: 0px;
-	right:0px;
-	left: 150px;
-
-}
-#menu-2 .lc1{
-	color: white;
-	position: relative;
-	top: 10px;
-}
-#menu-2 li{
-display: inline-block;
-}
-#menu-2 .contorno{
-	background: #797979;
-	height: 50px;
-	width: 75px;
-	position: relative;
-	top: 0px;
-}
-#menu-2 .contorno1{
-	background: #494949;
-	height: 50px;
-	width: 75px;
-	position: relative;
-	top: 0px;
-}
-#menu-2 .contorno2{
-	background: black;
-	position: relative;
-	top: 14px;
-	height: 50px;
-	width: 60px;
-}
-#menu-2 .img2{
-	position: relative;
-	top: 8px;
-	left: 13px;
-}
-#back {
-
-  background: #cccccc;
-  height: 670px;
-  width: 1274px;
-	margin: auto;
-	flex-wrap: wrap;
-
-}
-#back .fuentem{
-	font-family: 'Poppins', sans-serif;
-	font-size: 50px;
-	color: white;
-	text-align: center;
-	position: relative;
-	bottom: 10px;
-}
-#back .mayor{
-
-	border: 1px solid black;
-	background: black;
-	border: 1px solid black;
-	width: 49px;
-	height: 50px;
-	float: right;
-}
-#back .lugarM{
-	position: relative;
-	top: 200px;
-}
-#back .menor{
-	background: black;
-	font-size: 50px;
-	border: 1px solid black;
-	width: 49px;
-	height: 50px;
-	float: left;
-}
-#back .opciones {
-	display: inline-block;
-}
-#back .opciones{
-	background: #ffffff;
-	width: 800px;
-	position: relative;
-	top: 300px;
-	bottom: ;
-	right:0px;
-	left: 200px;
-}
-#back .pasos1 {
-position: relative;
-top:4px;
-	right:15px;
-	width: 150px;
-	height: 45px;
-
-}
-#back .pasos2{
-	position: relative;
-	bottom: 24px;
-	right: 20px;
-	width: 180px;
-	height: 45px;
-	border: 2px solid #cccccc;
-}
-#back .pasos3{
-	position: relative;
-	bottom: 24px;
-	right:25px;
-	width: 180px;
-	height: 45px;
-	border: 2px solid #cccccc;
-}
-#back .pasos4{
-	position: relative;
-	bottom: 24px;
-	right: 30px;
-	width: 225px;
-	height: 45px;
-	border: 2px solid #cccccc;
-}
-#opciones2{
-background: #ffffff;
-width: 800px;
-height: 100px;
-position: relative;
-top: 300px;
-bottom: ;
-right:0px;
-left: 200px;
-}
-#opciones2 li{
-	display: inline-block;
-}
-#opciones2 .border{
-	border-radius: 10px;
-	border: 1px solid gray;
 	color: black;
-	margin-bottom: 20px;
-	right: 5px;
-}
-#back .opciones li{
-	display: inline-block;
-}
-#back p{
-	font-family: 'Oswald', sans-serif;
-	font-size: 15px;
-}
-#back .flores {
-	position: relative;
-	top: 200px;
-	bottom: ;
-	right: ;
-	left: 500px;
-}
-#back .cajasletra{
-	ont-family: 'Oswald', sans-serif;
-	font-size: 5px;
-	color: black;
-}
-.flecha {
-	background: black;
-}
-#info2 .back2 {
-	height: 200px;
-  width: 245px;
-	background-color: #999999;
-}
-#post .img{
-	width: 40px;
-	height: 50px;
-	position: relative;
-	top: 70px;
-	bottom: 0px;
-	right: 0px;
-	left: 100px;
-}
-#post{
-	background: #f2f2f2;
-	height: 600px;
-  width: 1274px;
-	font-family: 'Roboto Condensed', sans-serif;
-	position: absolute;
-	display: inline-block;
-}
-#post .info1{
-	font-size: 30px;
-	font-family: 'Fjalla One', sans-serif;
-	color: white;
-}
-#public .fun{
-	width: 250px;
-	height: 294px;
-	background: #4d4d4d;
-	padding: 10px 10px 20px 10px;
-	margin: 5px 0px 5px 5px;
-	border: 2px solid white;
-	display: inline-block;
-	position:relative;
-	bottom: 73px;
-
-}
-#public {
-	position: relative;
-	bottom: 120px;
-	left: 200px;
-	display: inline-block;
-	border: 1px solid white;
-}
-#public .absoluto{
-	display: inline-block;
-	position: relative;
-	bottom: -2px;
-	height: 325px;
-
-}
-
-#info2{
-	display: inline-block;
-	position: relative;
-	left: 200px;
-}
-#infop {
-	display: inline-block;
-	position: relative;
-   bottom: 3px;
-   right:  4px;
-
-}
-#infop .cuadros{
-	width: 255px;
-	height: 150px;
-	background: #999999;
-	padding: 5px 5px 5px 5px;
-	margin: 2px 2px 2px 2px;
-	border: 1px solid white;
-	display: block;
-}
-#post .cuadro3{
-	width: 534px;
-	height: 187px;
-	background: #999999;
-	padding: 5px 5px 5px 2px;
-	margin: 4px 2px 2px 6px;
-	border: 1px solid white;
-	display: inline-block;
-}
-#public .grupo1{
-	display: inline-block;
-
-}
-#post .colorfun{
-	color: #5c5c5c;
-}
-#info2 .colornuevo{
-	font-size: 23px;
-}
-#info2 .nuevocolor{
-	font-size: 13px;
-}
-#info2 .info2{
-	font-family: 'Fjalla One', sans-serif;
-	color: black;
-}
-#info2 .infodelevento{
-	height: 200px;
-	background: #d0d0d0;
 	font-size: 10px;
-	font-family: 'Muli', sans-serif;
-position:relative;
-top: 78px;
 }
-#info2 .back3{
-	background: #d0d0d0;
+.prueba {
+	color: gray;
+	font-size: 30px;
 }
-#info2 .fun2{
-	width: 250px;
-	height: 500px;
-	background: #999999;
-	border: 2px solid white;
-	display: inline-block;
-}
-#info2 .flechaL{
-	position: relative;
-	top: 53px;
-  left: 225px;
-}
-#footer1{
-	background: white;
-	position:relative;
-	top:  535px;
-	width: 1273px;
-	height: 125px;
-	font-family: 'Muli', sans-serif;
-}
-#footer1 .nuestra1{
+.nav-menu nav ul li {
+	display: inline-grid;
 	color: black;
-	font-family: 'Fjalla One', sans-serif;
 }
-#footer1 .nuestra{
-	color: purple;
-font-family: 'Fjalla One', sans-serif;
+.nav-menu nav ul li a{
+	color: black;
+	font-size: 13px;
+	padding: 5px 1.5em;
 }
-#footer1 .tamaño{
-	font-size: 12px;
-}
-#footer1 .margen2{
-	height: 100px;
-	width: 300px;
-	padding: 20px;
-	position:relative;
-	left: 220px;
-	display: inline-block;
-}
-#footer1 .nuestrainfo{
-	display: inline-block;
-	font-size: 12px;
-	height: 100px;
-	width: 300px;
-	position: relative;
-	left: 150px;
-	bottom: 20px;
-	text-align:right;
-}
-#footer1 .nuestrainfo2{
-	display: inline-block;
-	font-size: 12px;
 
-	height: 100px;
-	width: 300px;
+.search-nav nav ul li {
+	display: inline-grid;
+	font-family: 'Poppins', sans-serif;
+}
+.login{
+	background: #797979;
+	padding: 15px 10px;
+	color: white;
+}
+.register{
+	background: #494949;
+	padding: 15px 10px;
+	color: white;
+}
+.search{
+	background: black;
+	padding: 15px 10px;
+}
+.search img {
+	width: 18px
+}
+
+
+/* Seccion de imagenes */
+
+.container-section{
+	background: #cccccc;
+	margin-top: 5px;
+}
+.container-background{
+	height: 45em;
 	position: relative;
-	left: 50px;
-	bottom: 20px;
-text-align:right;
 }
-.contenedor{
-	width: 1000px;
-	height: 1000px;
-	margin: 0 ;
-	max-width: 1000px;
+.steps-container{
+	width: 800px;
+	background: white;
+	border-radius: 1px;
+	position: absolute;
+	bottom: 55px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+
 }
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  /* border: 1px solid #ccc; */
+  background-color: white;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+	font-family: 'Oswald', sans-serif;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 5em;
+  transition: 0.3s;
+  font-size: 15px;
+	border: 1px solid #ddd;
+
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+	border-bottom: none !important;
+	border-right: none !important;
+
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 1.5em 5px 3.5em 5px;
+  /* border: 1px solid #ccc; */
+  border-top: none;
+}
+.form-step-one {
+	position: relative;
+}
+.form-step-one ul li {
+	display: inline-grid;
+}
+.form-step-one ul li input {
+	border-radius: 5px;
+	height: 1.4em;
+	padding-left: 5px;
+	border: 1px solid #cccccc;
+}
+.form-step-one ul li select {
+	color: #757575;
+	border-radius: 5px;
+	height: 1.6em;
+	padding-right: 5em;
+	border: 1px solid #cccccc;
+	background: white;
+}
+.form-step-one ul li button.btn-boolean {
+	border-radius: 3px;
+	background: white;
+	border: 1px solid #cccccc;
+}
+.form-step-one button.btn-next {
+	font-family: 'Oswald', sans-serif;
+	border-radius: 15px 15px 0 0;
+	background: black;
+	padding: 10px 3em;
+	color: white;
+	cursor: pointer;
+	position: absolute;
+  bottom: -60px;
+	width: 13em;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* information container  */
+.infromation-container{
+	font-family: 'Muli', sans-serif;
+	background: #f2f2f2;
+	padding: 10px 15em;
+	display: grid;
+	grid-template-areas:
+		'container-left container-left  container-left  container-left container-right';
+}
+
+.container-left{
+	text-align: center;
+	grid-area: container-left;
+	display: grid;
+	grid-template-areas:
+		'one two'
+		'one tree'
+		'four four';
+	grid-gap: 5px;
+	padding-right: 10px;
+	height: 27em;
+}
+.container-right{
+	grid-area: container-right;
+	background: #d0d0d0;
+
+}
+.one{
+	color: white;
+	grid-area: one;
+	background: #4d4d4d;
+}
+.two{
+	color: white;
+	grid-area: two;
+	background: #999999;
+}
+.tree{
+	color: white;
+	grid-area: tree;
+	background: #999999;
+}
+.four{
+	color: white;
+	grid-area: four;
+	background: #999999
+}
+.infromation-container{
+	background: #f2f2f2;
+	padding: 10px 15em;
+	display: grid;
+	grid-template-areas:
+		'container-left container-left  container-left  container-left container-right';
+}
+
+.footer-container{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer{
+	background: white;
+	font-family: 'Muli', sans-serif;
+	font-size: 13px;
+	display: grid;
+	padding: 5px 15em;
+  grid-template-columns: auto auto ;
+}
+.container-footer-right{
+	display: grid;
+	grid-template-columns: auto auto ;
+	text-align: right;
+
+}
+
 #bodycolor{
 	background:#e6e6e6;
-	width: 1265px;
+	padding: 5px 15em;
 }
-#seccion {
-	background: #e6e6e6;
-  width: 1273px;
-  height: 107px;
-	position: absolute;
-}
-#seccion .grupoc{
-	position: relative;
-	top: 20px;
-}
+
 #seccion .roboto{
-	position: relative;
-	left: 110px;
 	font-size: 20px;
 	font-family: 'Roboto', sans-serif;
 }
+.group-title{
+	margin: 10px 0;
+}
 #seccion .grupobusqueda{
-	height: 80px;
   width: 300px;
 	background: #f2f2f2;
 	display: inline-block;
@@ -507,42 +290,24 @@ text-align:right;
 	height: 32px;
 	background: gray;
 	display: inline-block;
-	position: relative;
-	top: 11px;
-	left: 10px;
 }
 #seccion .busqueda{
-	position: relative;
-	left: 20px;
 	font-size: 15px;
 	font-family: 'Roboto', sans-serif;
 }
 #seccion .buscartam{
 	color: black;
-	margin-bottom: 20px;
-	right: 5px;
 	border: none;
 	height: 30px;
-	position: relative;
 	width: 250px;
-	left:10px;
 }
 #seccion .grupo1{
 	background: #f2f2f2;
-  height: 105px;
-  width: 960px;
-	position: relative;
-	top: 10px;
-	left: 110px;
-
+	padding: 10px;
+  margin-bottom: 1em;
 }
 .grupo2{
 	background: #f2f2f2;
-	height: 80px;
-	width: 500px;
-	position: relative;
-	top: 6px;
-	left: 50px;
 	font-family: 'Roboto', sans-serif;
 }
 #seccion .grupo2 {
@@ -558,96 +323,74 @@ text-align:right;
 	font-family: 'Roboto', sans-serif;
 }
 #seccion2 .ordenamiento{
-display: inline-block;
+	display: inline-block;
+
 }
 #seccion2 .filtrosA {
 	display: inline-block;
-	position: relative;
 	left: 30px;
 }
 #seccion2 .ordenarpor{
 	background: white;
-	height: 50px;
-	width: 960px;
-	position: relative;
-	top: 170px;
-	left: 110px;
+	margin-bottom: 1em;
+	padding: 20px 15px;
 }
-#seccion2 .letrasP{
-	position: relative;
-	left: 20px;
-	top: 15px;
-}
-#seccion3 .conocermas{
-	position: relative;
-	top: 500px;
-}
-#seccion3 .grupohotel{
+
+/* Arreglar */
+
+.box{
 	background: white;
-	height: 170px;
-	width: 960px;
+	display: grid;
+	grid-template-columns: auto auto auto;
 	position: relative;
-	top: 190px;
-	left: 110px;
-	display: inline-block;
 }
 #seccion3 .fondo {
 	background:#424242;
 	width: 32px;
+	padding: 3px;
+}
+
+#seccion3 .column-one{
+	margin: 10px;
+}
+#seccion3 .column-two{
+	font-family: 'Ubuntu', sans-serif;
+	padding: 2em 0 0 0;
+
+}
+#seccion3 .column-tree {
+	position: relative;
+}
+
+#seccion3 .hotel-image{
+	width: 75%;
+	height: 160px;
 }
 #seccion3 .referencias li{
 	display: inline-block;
 }
-#seccion3 .gruporeferencia {
-	display: inline-block;
+#seccion3 .referencias {
+	padding: 2em 0 0 0;
 }
-#seccion3 .detalles{
-	font-size: 12px;
-	color:white;
-	font-family: 'Oswald', sans-serif;
-	position: relative;
-	top: 3px;
-	left: 18px;
+#seccion3 .referencias ul{
+	padding: 0;
 }
-#seccion3 .imagen{
-	display: inline-block;
-}
-#seccion3 .imagenhoteles{
-	width: 250px;
-	height: 160px;
-	border: 5px solid white;
-	display: inline-block;
-}
-#seccion3 .infohotel{
-
-	display: inline-block;
-	position: relative;
-	bottom: 40px;
-	left: 10px;
-	font-family: 'Droid Sans', sans-serif;
-
-}
-#section3 .tamle{
-	font-family: 'Ubuntu', sans-serif;
-}
-#seccion3 .gruporeferencia{
-	position: relative;
-	bottom: 80px;
-	left: 60px;
-}
-#seccion3 .ver{
-	position: relative;
-	top:20px;
-	left: 50px;
-	border-radius: 10px;
+#seccion3 .show-details{
+	border-radius: 5px;
+	border: none;
 	background: black;
-	width: 100px;
-	height: 25px;
+	color: white;
+	padding: 5px 15px;
+	margin-top: 1em;
+	font-size: 13px;
+	cursor: pointer;
 }
-#seccion3 .conocermas{
+.show-more{
 	font-family: 'Oswald', sans-serif;
 	font-size: 20px;
-	position: relative;
-	top: 225px;
-	left:600px;
+	border: none;
+	background: transparent;
+	margin: auto;
+	display: block;
+	cursor: pointer;
 }
