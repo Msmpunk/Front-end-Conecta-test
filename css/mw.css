@@ -7,15 +7,16 @@ a {
 }
 ul {
 	list-style-type: none;
+	padding: 0;
 }
 body{
+	font-family: 'Roboto', sans-serif;
 	padding-bottom: 5.7em;
 	background: #e6e6e6;
 }
 
 .header-container {
 	font-family: 'Poppins', sans-serif;
-
 }
 .top-header{
 	background: white;
@@ -137,11 +138,16 @@ body{
 	border: 1px solid #ddd;
 
 }
+.tab button:last-child {
+	border-right: none !important;
+	width: 28.3%
 
+}
 /* Create an active/current tablink class */
 .tab button.active {
 	border-bottom: none !important;
 	border-right: none !important;
+	border-left: none !important;
 
 }
 
@@ -243,8 +249,7 @@ body{
 	background: #f2f2f2;
 	padding: 10px 15em;
 	display: grid;
-	grid-template-areas:
-		'container-left container-left  container-left  container-left container-right';
+	grid-template-columns:50% 0;
 }
 
 .footer-container{
@@ -267,115 +272,103 @@ body{
 	text-align: right;
 
 }
+/* Second page */
 
-#bodycolor{
+.body-container{
 	background:#e6e6e6;
 	padding: 5px 15em;
-}
+	font-family: 'Poppins', sans-serif;
+	border-top: 3px solid white;
 
-#seccion .roboto{
-	font-size: 20px;
-	font-family: 'Roboto', sans-serif;
 }
-.group-title{
-	margin: 10px 0;
-}
-#seccion .grupobusqueda{
-  width: 300px;
-	background: #f2f2f2;
-	display: inline-block;
-}
-#seccion .lupa{
-	width: 32px;
-	height: 32px;
-	background: gray;
-	display: inline-block;
-}
-#seccion .busqueda{
-	font-size: 15px;
-	font-family: 'Roboto', sans-serif;
-}
-#seccion .buscartam{
-	color: black;
-	border: none;
-	height: 30px;
-	width: 250px;
-}
-#seccion .grupo1{
+.container-filter{
 	background: #f2f2f2;
 	padding: 10px;
-  margin-bottom: 1em;
+  margin: 1em 0;
+	display: grid;
+	grid-template-columns: 30% auto ;
 }
-.grupo2{
-	background: #f2f2f2;
-	font-family: 'Roboto', sans-serif;
+.input-search{
+	width: 70%;
+	height: 30px;
+	border: none;
 }
-#seccion .grupo2 {
-	display: inline-block;
-}
-#seccion .filtraciones{
-	display: inline-block;
-}
-#seccion .formulario input{
-	display: inline-block;
-}
-#seccion2 {
-	font-family: 'Roboto', sans-serif;
-}
-#seccion2 .ordenamiento{
-	display: inline-block;
+.btn-search{
+	border: none;
+	padding: 9px 17px;
+	background: #9e9e9e;
+	cursor: pointer;
 
 }
-#seccion2 .filtrosA {
-	display: inline-block;
-	left: 30px;
+.btn-search .img-search{
+	width: 12px;
 }
-#seccion2 .ordenarpor{
+
+.section-filter-by{
 	background: white;
-	margin-bottom: 1em;
-	padding: 20px 15px;
+	margin-bottom: 2.5em;
+	padding: 1em;
 }
-
-/* Arreglar */
-
+.box-by{
+	display: grid;
+	grid-template-columns: 20% auto auto;
+	position: relative;
+}
+.list-filter li {
+	display: inline-grid;
+	padding: 0 1.5em;
+	color: black;
+}
+.list-filter li a{
+	color: black;
+}
 .box{
 	background: white;
 	display: grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: 30% auto auto;
 	position: relative;
 }
-#seccion3 .fondo {
+.list-filter-btn{
+	border: none;
+	font-size: 15px;
+	font-weight: bold;
+	background: none;
+	cursor: pointer;
+}
+#hotel-list .fondo {
 	background:#424242;
 	width: 32px;
 	padding: 3px;
 }
 
-#seccion3 .column-one{
+#hotel-list .column-one{
 	margin: 10px;
 }
-#seccion3 .column-two{
+#hotel-list .column-two{
 	font-family: 'Ubuntu', sans-serif;
-	padding: 2em 0 0 0;
+	padding: 1.5em;
 
 }
-#seccion3 .column-tree {
-	position: relative;
+#hotel-list .column-tree {
+	padding: 1.5em;
+
 }
 
-#seccion3 .hotel-image{
-	width: 75%;
+#hotel-list .hotel-image{
+	width: 100%;
 	height: 160px;
 }
-#seccion3 .referencias li{
+#hotel-list .referencias li{
 	display: inline-block;
 }
-#seccion3 .referencias {
-	padding: 2em 0 0 0;
+#hotel-list .referencias {
+	/* padding: 2em 0 0 0; */
+	float: right;
 }
-#seccion3 .referencias ul{
+#hotel-list .referencias ul{
 	padding: 0;
 }
-#seccion3 .show-details{
+#hotel-list .show-details{
 	border-radius: 5px;
 	border: none;
 	background: black;

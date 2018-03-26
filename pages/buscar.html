@@ -68,76 +68,63 @@
         </div>
       </div>
     </header>
-    <div id="bodycolor">
-      <section id="seccion"><!-- primera seccion maqueta 2 -->
-        <div class="grupoc">
-          <div class="group-title">
-            <strong class="roboto"> TÍTULO DE LA SECCIÓN</strong>
+    <div class="body-container">
+      <section class="seaction-search">
+        <h3> TÍTULO DE LA SECCIÓN</h3>
+        <div class="container-filter">
+          <div class="search-from">
+            <h5>BUSCAR POR NOMBRE DEL HOTEL</h5>
+            <input class="input-search"type="text" placeholder="">
+            <button class="btn-search"><img class="img-search" src="../images/search.svg" alt="search"></button>
           </div>
-          <div class="grupo1">
-            <div class="grupobusqueda">
-                <div class="busqueda">
-                  <p>BUSCAR POR NOMBRE DEL HOTEL</p>
-                  <input class="buscartam"type="text" placeholder="">
-                  <div class="lupa">
-                    <a href="#"><img src="../images/lupa.png" alt="search"></a>
-                  </div>
-                </div>
-            </div>
-            <div class="grupo2">
-              <div class="tituloc">
-                <p class="">FILTRAR POR CATEGORÍA</p>
-              </div>
-              <div class="filtraciones">
-                <form class="formulario">
-                  <label for="calificacion5">
-                    <input type="checkbox" id="calificacion5" name="filtros" value="5 estrellas">★★★★★ 5 Estrellas
-                  </label>
-                  <label for="calificacion4">
-                    <input type="checkbox" id="calificacion4" name="filtros" value="4 estrellas">★★★★ 4 Estrellas
-                  </label>
-                  <label for="calificacion3">
-                    <input type="checkbox" id="calificacion3" name="filtros"value="3 estrellas">★★★ 3 Estrellas
-                  </label>
-                  <label for="calificacion2">
-                    <input type="checkbox" id="calificacion2" name="filtros" value="2 estrellas">★★ 2 Estrellas
-                  </label>
-                  <label for="calificacion1">
-                    <input type="checkbox" id="calificacion1" name="filtros" value="1 estrella">★ 1 Estrellas
-                  </label>
-                </form>
-              </div>
-            </div>
+          <div class="filter-section">
+            <h5>FILTRAR POR CATEGORÍA</h5>
+            <form>
+              <label>
+                <input type="checkbox" name="filter" value="5 estrellas">★★★★★ 5 Estrellas
+              </label>
+              <label>
+                <input type="checkbox" name="filter" value="4 estrellas">★★★★ 4 Estrellas
+              </label>
+              <label>
+                <input type="checkbox" name="filter"value="3 estrellas">★★★ 3 Estrellas
+              </label>
+              <label>
+                <input type="checkbox" name="filter" value="2 estrellas">★★ 2 Estrellas
+              </label>
+              <label>
+                <input type="checkbox" name="filter" value="1 estrella">★ 1 Estrellas
+              </label>
+            </form>
           </div>
         </div>
       </section>
-      <section id="seccion2">
-        <div class="ordenarpor">
-          <div class="letrasP">
-            <div class="ordenamiento">
-              <strong>ORDENAR POR:</strong>
-            </div>
-            <div class="filtrosA">
-              <div class="filtros">
-                <form class="formulario2">
-                  <label for="calificacion">
-                    <input type="radio" id="tipos1" name="filtros" value="precio">PRECIO
-                  </label>
-                  <label for="calificacion4">
-                    <input type="radio" id="tipos2" name="filtros" value="evaluacion">EVALUACIÓN DE HUESPEDES
-                  </label>
-                  <label for="calificacion3">
-                    <input type="radio" id="tipos3" name="filtros"value="favoritos">FAVORITOS
-                  </label>
-                </form>
-              </div>
-            </div>
+      <section class="section-filter-by">
+        <div class="box-by">
+          <div>
+            <strong>ORDENAR POR:</strong>
+          </div>
+          <div>
+            <ul class="list-filter">
+              <li>
+                <a href="#">Precio</a>
+              </li>
+              <li>
+                <a href="#">Evalucion de Huespedes </a>
+              </li>
+              <li>
+                <a href="#">Favoritos</a>
+              </li>
+            </ul>
+          </div>
+          <div class="">
+            <button class="list-filter-btn"type="button" name="button">MÁS ▼</button>
           </div>
         </div>
       </section>
 
       <!-- Arreglar -->
-      <section id="seccion3">
+      <section id="hotel-list">
         <div class="box">
           <div class="column-one">
             <img class="hotel-image" src="../images/florc.PNG" alt="hoteles">
@@ -164,7 +151,34 @@
           </div>
         </div>
       </section>
-      <section id="seccion3">
+      <section id="hotel-list">
+        <div class="box">
+          <div class="column-one">
+            <img class="hotel-image" src="../images/florc.PNG" alt="hoteles">
+          </div>
+          <div class="column-two">
+            <strong>NOMBRE DEL HOTEL<br>★★★★</strong>
+            <p class="hotel-information">Lorem ipsum dolor sit amet, consectetur adipisicing <br>elit, sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua. Ut enim ad minim veniam,<br> quis nostrud exercitation</p>
+          </div>
+          <div class="column-tree">
+            <div class="referencias">
+              <ul>
+                <li class="fondo">
+                  <img src="../images/palmera.png" alt="palmera">
+                </li>
+                <li class="fondo">
+                  <img src="../images/cena.png" alt="palmera">
+                </li>
+                <li class="fondo">
+                  <img src="../images/maletin.png" alt="palmera">
+                </li>
+              </ul>
+              <button  class="show-details"type="button" name="button">VER DETALLES</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="hotel-list">
         <div class="box">
           <div class="column-one">
             <img class="hotel-image" src="../images/florc.PNG" alt="hoteles">
@@ -191,7 +205,7 @@
           </div>
         </div>
       </section>
-      <section id="seccion3">
+      <section id="hotel-list">
         <div class="box">
           <div class="column-one">
             <img class="hotel-image" src="../images/florc.PNG" alt="hoteles">
@@ -218,40 +232,12 @@
           </div>
         </div>
       </section>
-      <section id="seccion3">
-        <div class="box">
-          <div class="column-one">
-            <img class="hotel-image" src="../images/florc.PNG" alt="hoteles">
-          </div>
-          <div class="column-two">
-            <strong>NOMBRE DEL HOTEL<br>★★★★</strong>
-            <p class="tamle">Lorem ipsum dolor sit amet, consectetur adipisicing <br>elit, sed do eiusmod tempor incididunt ut labore et dolore <br> magna aliqua. Ut enim ad minim veniam,<br> quis nostrud exercitation</p>
-          </div>
-          <div class="column-tree">
-            <div class="referencias">
-              <ul>
-                <li class="fondo">
-                  <img src="../images/palmera.png" alt="palmera">
-                </li>
-                <li class="fondo">
-                  <img src="../images/cena.png" alt="palmera">
-                </li>
-                <li class="fondo">
-                  <img src="../images/maletin.png" alt="palmera">
-                </li>
-              </ul>
-              <button  class="show-details"type="button" name="button">VER DETALLES</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <button class="show-more" type="button" name="button"> CARGAR MAS ▼</button>
     </div>
   <footer class="footer-container">
     <div class="footer">
       <div class="container-footer-left">
-        <div class="">
+        <div>
           <p class="nuestra1" >NUESTRA APP</p>
           <p class="tamaño">Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit,sed do eiusmod tempor<br> incididunt ut labore </p>
           <a href="#"><strong class="nuestra">GOOGLE PLAY</strong></a>
