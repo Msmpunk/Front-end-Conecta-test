@@ -50,7 +50,7 @@ body{
 
 #logotipo .letra-color{
 	color: purple;
-	font-size: 30px
+	font-size: 30px;
 }
 #logotipo .letra{
 	font-family: 'Poppins', sans-serif;
@@ -89,10 +89,14 @@ body{
 	background: black;
 	padding: 15px 10px;
 }
+
 .search img {
 	width: 18px
 }
 
+.hidden-search{
+	display: none;
+}
 
 /* Seccion de imagenes */
 
@@ -138,11 +142,10 @@ body{
 	border: 1px solid #ddd;
 
 }
-.tab button:last-child {
+/* .tab button:last-child {
 	border-right: none !important;
-	width: 28.3%
 
-}
+} */
 /* Create an active/current tablink class */
 .tab button.active {
 	border-bottom: none !important;
@@ -386,4 +389,100 @@ body{
 	margin: auto;
 	display: block;
 	cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+		.nav-menu{
+			display: none;
+		}
+    .bottom-header  {
+      padding: 5px 1em;
+    }
+		.infromation-container{
+			padding: 10px 2em;
+		}
+		.footer{
+			padding: 5px 2em;
+		}
+		.body-container{
+			padding: 5px 3em;
+		}
+		.tab button {
+			padding: 14px 4em;
+		}
+		.steps-container{
+			width: 700px;
+		}
+		.form-step-one ul li {
+			margin: 10px;
+		}
+
+		.description-st{
+			font-size: 13px;
+		}
+}
+
+@media only screen and (max-width: 750px) {
+		.box{
+			grid-template-columns: none;
+		}
+		.prueba {
+			font-size: 17px;
+		}
+		#logotipo .letra-color{
+			font-size: 17px;
+		}
+		.infromation-container{
+			padding: 10px 1em;
+		}
+		.footer{
+			padding: 5px 1em;
+		}
+		.search-nav{
+			display: none;
+		}
+		.container-filter {
+			margin-top: 10px;
+    	grid-template-columns: none;
+			font-size: 13px;
+		}
+		.tab button {
+			padding: 14px 1em;
+		}
+		.steps-container{
+			width: 285px;
+		}
+		.form-step-one ul li {
+			margin: 10px;
+		}
+		.box-by {
+    	grid-template-columns: 30% auto auto;
+		}
+		.footer{
+			font-size: 10px;
+		}
+		.list-filter li a{
+			font-size: 12px;
+		}
+		.body-container{
+			padding: 5px 1em;
+		}
+		.hidden-search{
+			display: block;
+		}
+		.bottom-header{
+			grid-template-columns: auto auto;
+		}
+		.hidden-search-img{
+			background: #525252;
+			padding:10px;
+			float: right;
+			border-radius: 5px;
+		}
+		.hidden-search-img img {
+			width: 18px
+		}
+
 }
